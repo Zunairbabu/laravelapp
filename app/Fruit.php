@@ -8,10 +8,4 @@ class Fruit extends Model
 {
     protected $fillable = ['Standerd','name'];
     protected $table = 'fruits';
-
-
-
-
-
-    //
 }
