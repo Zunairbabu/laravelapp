@@ -15,8 +15,10 @@ class CreateFruitsTable extends Migration
     {
         Schema::create('fruits', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('fruit_id');
             $table->integer('Stenderd');
             $table->string('name');
+            $table->foreign('player_id')->references('id')->on('players');
             $table->timestamps();
             $table->softDeletes();
 

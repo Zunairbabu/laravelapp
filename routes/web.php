@@ -11,7 +11,8 @@
 |
 */
 Route::get('get_fruits', 'FruitsController@get_all_fruits');
-Route::get('test','TestController');
+Route::get('get_players','PlayersController@get_all_players');
+
 
 
 
