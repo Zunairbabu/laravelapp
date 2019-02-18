@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb789f60-da5c-4268-9200-45b69b0f08d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_18_101047_create_students_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_18_101454_create_rooms_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_18_101612_create_courses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_02_18_101709_create_course_instructors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-    </list>
+    <list default="true" id="bb789f60-da5c-4268-9200-45b69b0f08d8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +203,7 @@
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="705" />
     <option name="y" value="14" />
     <option name="width" value="549" />
@@ -333,16 +326,15 @@
       <workItem from="1550131877781" duration="6057000" />
       <workItem from="1550214306734" duration="15851000" />
       <workItem from="1550310862573" duration="4829000" />
-      <workItem from="1550469643143" duration="13964000" />
+      <workItem from="1550469643143" duration="14550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49713000" />
+    <option name="totallyTimeSpent" value="50299000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28139183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
