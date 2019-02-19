@@ -13,10 +13,9 @@ class CreateRoomsTable extends Migration
      */
     public function up()
     {
-        if (!Schema::hasTable('rooms')) {
+
             Schema::create('rooms', function (Blueprint $table) {
                 $table->increments('r_id');
-                $table->foreign('course_id')->references('id')->on('courses');
                 $table->date('date');
                 $table->string('room_loc');
                 $table->integer('capacity');
@@ -24,7 +23,7 @@ class CreateRoomsTable extends Migration
                 $table->softDeletes();
             });
         }
-    }
+
 
     /**
      * Reverse the migrations.

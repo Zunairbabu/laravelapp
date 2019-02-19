@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCourseInstructorsTable extends Migration
+class AddForeignKeyToCourses extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateCourseInstructorsTable extends Migration
      */
     public function up()
     {
-
-        Schema::create('course_instructors', function (Blueprint $table) {
-            $table->increments('course_ins_id');
-            $table->string('instru_name');
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::table('courses', function (Blueprint $table) {
+            //
+            $table->foreign('student_id')->references('s_id')->on('students');
+            $table->foreign('course_instructor_id')->references('course_ins_id')->on('course_instructors');
+            $table->foreign('room_id')->references('r_id')->on('rooms');
         });
     }
-
 
     /**
      * Reverse the migrations.

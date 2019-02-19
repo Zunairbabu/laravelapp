@@ -13,7 +13,7 @@ class CreateStudentsTable extends Migration
      */
     public function up()
     {
-        if (!Schema::hasTable('student')) {
+
             Schema::create('students', function (Blueprint $table) {
                 $table->increments('s_id');
                 $table->string('s_name');
@@ -23,7 +23,7 @@ class CreateStudentsTable extends Migration
                 $table->softDeletes();
             });
         }
-    }
+
 
     /**
      * Reverse the migrations.

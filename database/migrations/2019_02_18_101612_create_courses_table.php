@@ -13,17 +13,18 @@ class CreateCoursesTable extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('student')){
+
         Schema::create('courses', function (Blueprint $table) {
             $table->increments('c_id');
             $table->string('c_name');
-            $table->foreign('s_id')->references('id')->on('students');
-            $table->increments('course_ins_id')->refercences()->on('course_instructors');
+            $table->integer('student_id')->unsigned();
+            $table->integer('course_instructor_id')->unsigned();
+            $table->integer('room_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
     }
-    }
+
     /**
      * Reverse the migrations.
      *
@@ -31,6 +32,8 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses');
+        Schema::create('courses', function (Blueprint $table) {
+        });
+
     }
 }
