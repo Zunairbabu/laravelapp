@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+//use  App\Http\Controllers\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('test', 'TestController@test');
+Route::post('test1', 'TestController@test1');
+Route::post('test2', 'TestController@test2');
+Route::post('test3', 'TestController@test3');
+
+Route::get('students','StudentController@Readstudent');
+Route::get('student','StudentController@Reterivestudent');
+Route::post('studtint','StudentController@updatestudent');
+//Route::delete('students','StudentController@deletestudent');
+
